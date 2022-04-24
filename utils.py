@@ -13,7 +13,7 @@ def search_by_title(film):
     query = f"""SELECT `title`, `country`, `release_year`, `listed_in`, `description` 
                    FROM netflix
                    WHERE `title` != '' AND `title` = '{film}'
-                   ORDER BY `release_year` 
+                   ORDER BY `release_year` DESC 
                    LIMIT 1
                
                """
